@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <style>
          * {
             font-family: 'Ubuntu', sans-serif;
@@ -22,7 +23,7 @@
             opacity: 0.95;
             height: 120px;
             width: 100%;
-            margin-top: -15px;
+            margin-top: -4px;
             float: left;
             text-align: center;
         }
@@ -91,9 +92,19 @@
 
         }
 
-
+        .container1{
+            width:100%;
+            margin: auto !important;
+            display: inline-block;
+            position: absolute;
+            align-items: center;
+            background-image: url('hostel.jpeg');
+            background-position:relative ;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
         .dropdown .dropbtn {
-            font-size: 16px;
+            font-size: 24px;
             border: none;
             outline: none;
             color: white;
@@ -116,6 +127,9 @@
             box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
             z-index: 1;
         }
+        label{
+            color: #fff;
+        }
 
         /* Links inside the dropdown */
         .dropdown-content a {
@@ -135,21 +149,27 @@
             margin-top: -8px;
         }
         #complain{
-            font-family: fantasy;
+            /* font-family: fantasy; */
             /* text-align:centre;
              */
-             width:fit-content;
-             margin:100px auto;
+             width:100%;
+             margin:30px auto;
         }
-        .form{
-         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-            width:fit-content;
-            margin:auto;
+        .form{background: rgb(32,32,36);
+background: linear-gradient(90deg, rgba(32,32,36,1) 0%, rgba(42,47,65,1) 14%);
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            width:40%;
+            margin:70px auto;
+            border: 2px solid grey;
+            padding: 50px 18px;
+            box-shadow: 10px 10px;
         }
-
+        form{
+            margin: 5px;
+        }
         select{
             font-family: 'Times New Roman', Times, serif;
-            padding:20px 10px;
+            padding:14px 10px;
             font-size: x-large;
         }
         label{
@@ -157,17 +177,102 @@
              font-size:x-large;
         }
         input{
-            padding: 30px 120px;
+            /* padding: 30px 120px; */
         }
         #options{
             font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size:large;
+            width: 100%;
+        }
+        #optionss{
+            width: 100%;
         }
         #lol{
             font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
             font-size:x-large;
+            width: 100%;
         }
+        #complain{
+            text-align: center;
+            color: white;
+            font-family: 'Fjalla One', sans-serif;
+            font-size: 50px;
+            background: #121FCF;
+        background: radial-gradient(circle farthest-side at top left, #fff4f4 0%, #fff6f6 100%);
+        -webkit-background-clip: text;
+         -webkit-text-fill-color: transparent;
+        }
+        .set1{
+            width: 100%;
+            padding: 14px 10px;
+        }
+        .button{
+            text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
+  background: rgb(145, 92, 182);
+  padding: 15px 40px;
+  border-radius: 4px;
+  font-weight: normal;
+  text-transform: uppercase;
+  transition: all 5s ease-in-out;
+        }
+ 
+.btns{
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  /* min-height: 90vh; */
+  /* flex-direction: row;   */
+}
+.blue-btn{
+  color: #03e9f4;
+  border: 1.5px solid #03e9f4;
+  border-radius: 7px;  
+  text-decoration: none;
+}
+.blue-btn:hover{
+  background-color: #03e9f4;
+  color: #050801;
+  box-shadow: 0px 0px 5px #03e9f4, 0px 0px 25px #03e9f4, 0px 0px 50px #03e9f4, 0px 0px 100px #03e9f4;
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #0005); 
+}
 
+
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Inconsolata", monospace;
+  box-sizing: border-box;
+}
+
+body {
+  /* background-color: #050801; */
+  /* background-image: url('hostel.jpeg'); */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
+  height: 100%;
+}
+
+p{
+  color: black;
+  text-align:center;
+  /* margin-top: 10px */
+}
+
+a {
+  /* position: relative; */
+  /* display: inline-block; */
+  padding: 25px 30px;
+  /* margin: 40px; */
+  font-size: 24px;
+  /* text-decoration: none; */
+  /* text-transform: uppercase; */
+  /* letter-spacing: 4px; */
+  transition: 0.5s;
+}
+.div2{
+    z-index: 999;
+}
     </style>
 </head>
 <body style="margin:0px;">
@@ -175,8 +280,7 @@
         <div class="floater">
             <marquee class="qwerty" id="moving" width="100%" height="20px" direction="left" onmouseover="this.stop()"
                 onmouseout="this.start()">
-                <div> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt exercitationem repudiandae
-                    impedit atque suscipit fugit beatae culpa laboriosam voluptates unde!</div>
+                <div class="div2"> This website is presently an unofficial one but we aim to bring all services by BMSETH online!</div>
             </marquee>
         </div>
         <div class="stickyone">
@@ -220,28 +324,36 @@
                 </ul>
             </nav>
         </div>
-        <div>
+        <div class="container1">
             <h1 id="complain">
                 COMPLAINT BOX
             </h1>
             <div class="form">
                 <form>
                   <label for="complaint" id="lol"><b>Complaint Regarding</b></label>
+                  <br>
+                  <br>
+                  <div class="set1">
                   <select id="optionss" >
                     <option value="a">Fans/Electromic items etc</option>
                     <option value="b">Ragging</option>
                     <option value="c">Wifi</option>
                     <option value="d">Almirah locks</option>
+                    <option value="e">Any other(if yes specify)</option>
+
                     </select>
+                    </div>
                     <br><br><br>
                     <label for="time">
                         Time of availability(fixing fans etc)
                     </label>
+                    <br>
+                    <br>
                     <label>From-</label>
                     <select>
                     <option value="10">10 am</option>
                     <option value="11">11 am</option>
-                    <option value="12">12 am</option>
+                    <option value="12">12 pm</option>
                     <option value="1">1 pm</option>
                     <option value="2">2 pm</option>
                     <option value="3">3 pm</option>
@@ -261,24 +373,33 @@
                     </select>   
                     <br><br><br>
                     <label>Reason for complain - </label>
-                    <input type="text" placeholder="Enter reason...">
+                    <br>
+                    <br>
+                    <input class="set1" type="text" placeholder="Enter reason...">
                     <br><br><br>
                     <label>Anything other(s) - </label>
-                    <input type="text">
-                    <br><br>
+                    <br>
+                    <br>
+                    <input class="set1" type="text">
+                    <br><br><br>
                     <center>
-                    <input type="submit">
+                        <!-- <a href="#" class="button glow-button" target="_blank">Submit</a> -->
+                        <div class="btns">
+                            <br>
+                            <a class="blue-btn" href="#">Submit</a>
+                            </div>
                     </center>
                 
                 </form>
             </div>
-        </div>
-        <br><br><br>
-        <div class="floater">
-            <marquee class="qwerty" id="moving" width="100%" height="20px" direction="left" onmouseover="this.stop()"
+            <!-- </div> -->
+            
+            <div class="floater">
+                <marquee class="qwerty" id="moving" width="100%" height="20px" direction="left" onmouseover="this.stop()"
                 onmouseout="this.start()">
                 <div> Ragging of students admitted to B M S Educational Trust Hostel is totally prohibited and banned both in the Campus and Hostels (including IH). Any violation of this by the Students/Hostelites will be viewed very seriously and punished as per the regulations prevailing in the State and the Central Government. The Punishment will be severe / harsh which can be to the extent of rusticating from the Institution and / or removed from the Hostel without any notice by forfeiting all kinds of refundable deposits.</div>
             </marquee>
+        </div>
         </div>
 </body>
 </html>
